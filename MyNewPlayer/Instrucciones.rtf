@@ -1,0 +1,256 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf340
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww16880\viewh11800\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Paso1.- Crear nuevo proyecto\
+Creamos un nuevo proyecto, en formato swift sin coreData.  Damos Click a Fix Issue y listo.\
+\
+Paso2.- Storyboard\
+\
+//Size Classes\
+En este caso en el Storyboard voy a quitarle las Size Classes.\
+Nos vamos al file Inspector y deseleccionamos la casilla de Size Classes.\
+Confirmamos que queremos quitarlas y listo.\
+\
+//Background\
+Color: View Flipside Background Color\
+\
+//Image-labels-button\
+Ahora vamos a a\'f1adir una image, la ajustamos a 240 x 240px\
+\
+Ahora a\'f1adimos los labels de 240 x 34px, centramos el texto, le cambiamos el color a blanco, el primer label ser\'e1 el titulo, el segundo ser\'e1 de autores. Al titulo lo ponemos en Bold y al autor en regular.\
+\
+Luego a\'f1adimos 3 botones los cuales van a ser nuestros controles de reproducci\'f3n.\
+\
+\
+Paso 3.- Assets\
+\
+Luego nos vamos a nuestros Assets.xcassets y arrastramos nuestros iconos a esta carpeta, despu\'e9s los vamos a arrastrar al cuadro de en medio donde dice 2x universal.\
+\
+//ViewController\
+Luego vamos a nuestro \'93ViewController\'94\
+\
+Vamos a eliminar la funci\'f3n \'93didRecieveMemoryWarning\'94 ya que no nos va a servir en esta aplicaci\'f3n.\
+\
+\
+\
+\
+\
+En nuestro viewController vamos a declarar unas variables para asignarles los iconos que a\'f1adimos a nuestra carpeta de Assets.\
+\
+Una vez creadas las variables nos vamos a nuestro storyboard. y seleccionamos nuestro  editor asistente. Luego buscamos nuestro storyBoard\
+\
+paso 4.- Asignar iconos\
+\
+Creamos los Outlets  de los iconos y luego en \'93viewDidLoad()\'94 vamos a asignarlos.\
+Una vez asignados. Nos vamos a nuestro Storyboard.\
+\
+Una vez que estemos en nuestro Storyboard vamos a seleccionar nuestros 3 botones y en el inspector de propiedades vamos a quitarles el texto y cambiarles el color.\
+\
+Ahora hagamos lo mismo con el bot\'f3n de shuffle. En este caso ser\'e1n 2 botones, uno de texto y otro de \'edcono.  En el caso del icono, no le vamos a hacer ninguna asignaci\'f3n de variable sino en el inspector de par\'e1metros le vamos a dar una imagen, y esta ser\'e1 la de shuffle. Luego verificamos que el bot\'f3n de texto del shuffle este abajo del bot\'f3n del icono. Hasta este punto ya ajustamos todos los botones.\
+\
+paso 5.- Importar sonidos e im\'e1genes \
+Ahora vamos a importar nuestras canciones y sus portadas de disco. Primero vamos a crear unas carpeta para las im\'e1genes y otros para las canciones. Luego arrastramos los recursos a sus respectivas carpetas y listo.\
+\
+Paso 6.- Crear las listas de reproducci\'f3n\
+\
+Vamos a regresar a nuestro viewController, en el vamos a crear los arreglos de los artistas, t\'edtulos, los sonidos  y las portadas de disco.\
+\
+Los t\'edtulos y los autores pueden ser los que sean pero las im\'e1genes y los  audios no.\
+\
+Paso7.- crear el reproductor y a\'f1adir outlets.\
+\
+Ahora vamos a crear el reproductor declarando una constante que llamaremos player\
+Despu\'e9s vamos a unir los Outlets de la portada el titulo y el autor.\
+\
+Paso8.- Funci\'f3n addResource\
+\
+Ahora vamos a crear una funci\'f3n donde se llamen los recursos y para que se muestren en nuestra vista.\
+\
+la funci\'f3n la vamos a llamar addResource pas\'e1ndole como par\'e1metro un n\'famero, este numero ser\'e1 el numero de la lista de las canciones.\
+\
+Entonces creamos una constante de la fuente de esta canci\'f3n y una para la portada.\
+Luego el de la portada la vamos a convertir en datos(NSData) con otros variable porque es el formato que necesita el ImageView para mostrarlo.\
+\
+Luego agregamos un try-catch en caso de que pase alg\'fan error con el try.\
+dentro del \'93do\'94 vamos a asignarle al player la canci\'f3n que queremos reproducir, luego le decimos a player que reproduzca esa canci\'f3n, despu\'e9s ya solo asignamos a la portada la portada, el titulo y el autor. y listo. Ejecutamos la funci\'f3n en el \'93viewDidLoad()\'94 para ver que funciona y ya quedo.\
+\
+Paso 9.-\
+ahora vamos ha hacer la l\'f3gica de los botones de reproducci\'f3n.\
+Para esto vamos a crear la funci\'f3n de los botones con actions.\
+\
+Abrimos nuestro editor asistente para ver el storyBoard  y creamos el action de un bot\'f3n, despu\'e9s ya solo asociamos los dem\'e1s botones a ese mismo acci\'f3n y listo. \
+\
+Ahora vamos crear una variable para asignar los botones.\
+\
+	let playerButtons = (sender.titleLabel?.text)!\
+\
+con esta variable estamos pidiendo los t\'edtulos de cada bot\'f3n, ahora aplicamos un switch para cada bot\'f3n y vamos a hacer que cada bot\'f3n haga lo que queremos que hagan. \
+\
+Ahora vamos a crear una variable \'93\'edndexSong\'94 de tipo \'93Int\'94 que nos servir\'e1 para ir cambiando las canciones. Luego le asignamos un valor en el \'93viewDidLoad()\'94 y ponemos un print con el indexSong para corroborar que ese es el numero que se eligi\'f3, luego ejecutamos la funci\'f3n \'93addResource\'94 para que player pueda funcionar y le pasaremos como par\'e1metro \'93indexSong\'94. \
+\
+Empezaremos con el bot\'f3n de \'93Play\'94, decimos, si player no esta sonando entonces player empezar\'e1 a sonar y el icono del play cambiar\'e1 a pause, sino player ser\'e1 pause y el icono de pause cambiar\'e1 a play.\
+\
+Lo comprobamos y vemos que se pone play al iniciar porque en la funci\'f3n le dijimos que se ponga en play.\
+\
+Ahora trabajaremos con el boton de 
+\b \'93prev\'94
+\b0 .- En este pondremos que, si 
+\b indexSong
+\b0  == 0 entonces 
+\b indexSong
+\b0  = 
+\b listSong.count 
+\b0  luego ponemos 
+\b indexSong -= 1
+\b0  y despu\'e9s ejecutamos la funci\'f3n 
+\b addSource
+\b0  pas\'e1ndole como par\'e1metro el nuevo valor de 
+\b indexSong
+\b0 . luego ponemos un print con el 
+\b \'edndexSong
+\b0  para corroborar en la consola que esta pasando ese n\'famero.\
+\
+Ahora trabajaremos con el bot\'f3n \'93
+\b next
+\b0 \'94.- En este pondremos que si el 
+\b indexSong
+\b0  es igual a songList.count -1, ya que un un arreglo(Array) cuenta desde el 1 y el \'edndex del arreglo cuenta desde cero, por lo tanto songList tiene una unidad mas que indexSong y por eso le restamos uno a songList, entonces pondremos que indexSong = -1, luego pondremos indexSong += 1 y despu\'e9s ejecutamos la funci\'f3n addSource pas\'e1ndole como par\'e1metro indexSong. Luego ponemos print con el indexSong para corroborar en la consola que esta pasando ese n\'famero.\
+\
+Ahora trabajaremos con el bot\'f3n de \'93shuffle\'94.- En este declararemos una constante shuffle = Int(arc4random_uniform(UInt32(songList.count))), de esta manera a al 
+\b arc4random
+\b0  le estamos pasando la lista de las canciones existentes y con base a ese numero har\'e1 un random. luego agregamos la funci\'f3n addSource pas\'e1ndole como par\'e1metro \'93shuffle\'94.\
+\
+Listo. Hemos creado un reproductor de m\'fasica con una opci\'f3n de reproducci\'f3n aleatoria.\
+\
+Paso 10.-\
+Ahora como plus a\'f1adiremos el shake. Con esta funci\'f3n vamos a decir que realice una reproducci\'f3n aleatoria cuando se sacuda el dispositivo.\
+\
+primero llamaremos a la funci\'f3n 
+\b motionEnded
+\b0  luego le diremos diremos que si motion == .MotionShake, entonces volvemos a declarar el shuffle y  luego ponemos la funci\'f3n addSource con el par\'e1metro shuffle. Listo\
+\
+\
+Ahora haremos la lista de reproducci\'f3n.\
+\
+Para esto necesitaremos un TableViewController. Nos vamos a nuestro storyBoard, del lado derecho vamos a jalar un Navigation Controller, este siempre viene acompa\'f1ado de un TableViewController. Luego arrastramos la flecha de la primera pantalla que queremos mostrar a la vista del Navigation Controller. Ahora presionamos sobre el Prototype Cells y le pondremos como identificador 
+\b \'93Cell\'94
+\b0 , para quitar el warning  que nos sale, luego desde el la celda vamos a crear un segu\'e9 de tipo push, presionamos ahora sobre el segu\'e9 y le vamos a dar un identificador que se llamar\'e1 details.\
+\
+Ahora vamos a crear un nuevo archivo de tipo TableViewController que ya viene con funciones que nos servir\'e1n para configurar las celdas. \
+\
+Una vez que hayamos creado el TableViewController vamos a crear una instancia del ViewController con 
+\b let VC = ViewController()
+\b0  y crearemos dos variables que ser\'e1n de tipo Array de strings. Uno ser\'e1 para la lista de los t\'edtulos y otro ser\'e1 el de las portadas.\
+\
+Ahora en en el 
+\b viewDidLoad()
+\b0  vamos a asignar las listas de t\'edtulos y de portadas de nuestro ViewController a las variables que creamos.\
+\
+Paso 11.- Configuraci\'f3n de la celda\
+\
+Ahora configuraremos las celdas con las funciones que ya est\'e1n listas. \
+\
+En la funci\'f3n 
+\b numberOfSectionsInTableView
+\b0  retornaremos 1\
+\
+En la funci\'f3n 
+\b numberOfRowsInSection 
+\b0 retornaremos nuestro titleList.count\
+\
+Quitamos los comentarios del cellForRowAtIndexPath y en el identificador de celda escribimos \'93Cell\'94 \
+\
+Ahora vamos a pasarle la lista de los t\'edtulos a la celda. cell.textlabel?.text = titleList[indexPath.row] y con esto ya tenemos la lista de los nombres en las celdas.\
+\
+Luego vamos a crear una constante para obtener la lista de las portadas, luego creamos una constante donde vamos a convertir a Datos esa lista de portadas, despu\'e9s se lo asignamos a la celda con 
+\b cell.imageView?.image = UIImage(data: converData!)
+\b0 .\
+\
+Paso12.- Pasar el numero de la canci\'f3n seleccionada al indexSong\
+Ahora vamos a descomentar el 
+\b prepareForSegue
+\b0  donde vamos a crear una constante 
+\b IndexPath = self.tableView.indexPathForSelectedRow
+\b0 , luego declaramos una constante let 
+\b viewController:
+\b0  
+\b ViewController = segue.destinationViewController as! ViewController
+\b0 , despu\'e9s declaramos otra constante que ser\'e1 el numero de la canci\'f3n seleccionada con 
+\b let indexPath = self.tableView.indexPathForSelectedRow
+\b0 , luego este numero se lo pasamos al 
+\b indexSong
+\b0  con 
+\b viewController.indexSong = indexPath?.row
+\b0  para que cuando cambiemos a la vista del reproductor ya tenga asignado el numero de canci\'f3n que queremos escuchar.\
+\
+Luego regresamos a nuestro ViewController para quitarle el numero que le asignamos al 
+\b indexSong
+\b0  en el 
+\b viewDidLoad()
+\b0  porque ese numero ya se lo va a pasar el 
+\b TableViewController
+\b0 .\
+\
+Listo. Ya tenemos nuestra lista de reproducci\'f3n. \
+\
+\
+\
+\
+RECAPITULANDO\
+\
+\
+0.- Importamos AVFundation.\
+\
+1.- Creamos las variables de los iconos de control de reproducci\'f3n, las listas de t\'edtulos, autores, portadas y canciones, e instanciamos el AVAudioPlayer()\
+\
+2.- Luego creamos los Outlets del control de reproducci\'f3n, el titulo, autor y la portada.\
+\
+3.- Asignamos a los botones del control de reproducci\'f3n los iconos, el icono de shuffle se asigna directamente en el inspector de atributos.\
+\
+4.- Creamos la funci\'f3n donde vamos a a\'f1adir los recurso y se le pone play a la canci\'f3n, aqu\'ed mismo asignamos el titulo el autor y la portada.\
+\
+5.- Creamos los action de los botones, play, prev, next y shuffle.\
+\
+6.- Creamos el shake y listo.\
+\
+ \
+TableViewController\
+\
+1.- crear la instancia a la vista del reproductor.\
+\
+2.- Crear las variables de lista de canciones y lista de portadas.\
+\
+3.- configuramos las celdas con el nombre y la portada de discos.\
+\
+4.- Configuramos el prepareForSegue.\
+\
+\
+\
+\
+\
+	\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+}
