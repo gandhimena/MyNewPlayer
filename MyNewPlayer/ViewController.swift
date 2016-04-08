@@ -80,6 +80,7 @@ class ViewController: UIViewController {
         case "prev":
             
             if indexSong == 0{
+                
                 indexSong = songList.count
             }
             
@@ -92,6 +93,7 @@ class ViewController: UIViewController {
         case "next":
             
             if indexSong == songList.count - 1{
+                
                 indexSong! = -1
                 
             }
