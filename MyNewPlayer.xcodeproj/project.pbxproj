@@ -13,6 +13,19 @@
 		813B714F1CB073220040F4D3 /* MyNewPlayer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 813B714D1CB073220040F4D3 /* MyNewPlayer.xcdatamodeld */; };
 		813B71511CB073220040F4D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 813B71501CB073220040F4D3 /* Assets.xcassets */; };
 		813B71541CB073220040F4D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 813B71521CB073220040F4D3 /* LaunchScreen.storyboard */; };
+		813B71661CB099CD0040F4D3 /* sound1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 813B71601CB099CD0040F4D3 /* sound1.mp3 */; };
+		813B71671CB099CD0040F4D3 /* sound2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 813B71611CB099CD0040F4D3 /* sound2.mp3 */; };
+		813B71681CB099CD0040F4D3 /* sound3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 813B71621CB099CD0040F4D3 /* sound3.mp3 */; };
+		813B71691CB099CD0040F4D3 /* sound4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 813B71631CB099CD0040F4D3 /* sound4.mp3 */; };
+		813B716A1CB099CD0040F4D3 /* sound5.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 813B71641CB099CD0040F4D3 /* sound5.mp3 */; };
+		813B716B1CB099CD0040F4D3 /* sound6.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 813B71651CB099CD0040F4D3 /* sound6.mp3 */; };
+		813B71721CB099F70040F4D3 /* image1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 813B716C1CB099F70040F4D3 /* image1.jpg */; };
+		813B71731CB099F70040F4D3 /* image2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 813B716D1CB099F70040F4D3 /* image2.jpg */; };
+		813B71741CB099F70040F4D3 /* image3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 813B716E1CB099F70040F4D3 /* image3.jpg */; };
+		813B71751CB099F70040F4D3 /* image4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 813B716F1CB099F70040F4D3 /* image4.jpg */; };
+		813B71761CB099F70040F4D3 /* image5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 813B71701CB099F70040F4D3 /* image5.jpg */; };
+		813B71771CB099F70040F4D3 /* image6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 813B71711CB099F70040F4D3 /* image6.jpg */; };
+		813B71791CB24E8A0040F4D3 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813B71781CB24E8A0040F4D3 /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +37,19 @@
 		813B71501CB073220040F4D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		813B71531CB073220040F4D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		813B71551CB073220040F4D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		813B71601CB099CD0040F4D3 /* sound1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound1.mp3; sourceTree = "<group>"; };
+		813B71611CB099CD0040F4D3 /* sound2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound2.mp3; sourceTree = "<group>"; };
+		813B71621CB099CD0040F4D3 /* sound3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound3.mp3; sourceTree = "<group>"; };
+		813B71631CB099CD0040F4D3 /* sound4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound4.mp3; sourceTree = "<group>"; };
+		813B71641CB099CD0040F4D3 /* sound5.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound5.mp3; sourceTree = "<group>"; };
+		813B71651CB099CD0040F4D3 /* sound6.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sound6.mp3; sourceTree = "<group>"; };
+		813B716C1CB099F70040F4D3 /* image1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image1.jpg; sourceTree = "<group>"; };
+		813B716D1CB099F70040F4D3 /* image2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image2.jpg; sourceTree = "<group>"; };
+		813B716E1CB099F70040F4D3 /* image3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image3.jpg; sourceTree = "<group>"; };
+		813B716F1CB099F70040F4D3 /* image4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image4.jpg; sourceTree = "<group>"; };
+		813B71701CB099F70040F4D3 /* image5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image5.jpg; sourceTree = "<group>"; };
+		813B71711CB099F70040F4D3 /* image6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image6.jpg; sourceTree = "<group>"; };
+		813B71781CB24E8A0040F4D3 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +82,60 @@
 		813B71451CB073220040F4D3 /* MyNewPlayer */ = {
 			isa = PBXGroup;
 			children = (
-				813B71461CB073220040F4D3 /* AppDelegate.swift */,
-				813B71481CB073220040F4D3 /* ViewController.swift */,
-				813B714A1CB073220040F4D3 /* Main.storyboard */,
+				813B715E1CB098520040F4D3 /* controllers */,
+				813B715F1CB098610040F4D3 /* views */,
+				813B715D1CB0983D0040F4D3 /* sounds */,
+				813B715C1CB0982F0040F4D3 /* images */,
 				813B71501CB073220040F4D3 /* Assets.xcassets */,
 				813B71521CB073220040F4D3 /* LaunchScreen.storyboard */,
 				813B71551CB073220040F4D3 /* Info.plist */,
 				813B714D1CB073220040F4D3 /* MyNewPlayer.xcdatamodeld */,
 			);
 			path = MyNewPlayer;
+			sourceTree = "<group>";
+		};
+		813B715C1CB0982F0040F4D3 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				813B716C1CB099F70040F4D3 /* image1.jpg */,
+				813B716D1CB099F70040F4D3 /* image2.jpg */,
+				813B716E1CB099F70040F4D3 /* image3.jpg */,
+				813B716F1CB099F70040F4D3 /* image4.jpg */,
+				813B71701CB099F70040F4D3 /* image5.jpg */,
+				813B71711CB099F70040F4D3 /* image6.jpg */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		813B715D1CB0983D0040F4D3 /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				813B71601CB099CD0040F4D3 /* sound1.mp3 */,
+				813B71611CB099CD0040F4D3 /* sound2.mp3 */,
+				813B71621CB099CD0040F4D3 /* sound3.mp3 */,
+				813B71631CB099CD0040F4D3 /* sound4.mp3 */,
+				813B71641CB099CD0040F4D3 /* sound5.mp3 */,
+				813B71651CB099CD0040F4D3 /* sound6.mp3 */,
+			);
+			name = sounds;
+			sourceTree = "<group>";
+		};
+		813B715E1CB098520040F4D3 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				813B71461CB073220040F4D3 /* AppDelegate.swift */,
+				813B71781CB24E8A0040F4D3 /* TableViewController.swift */,
+				813B71481CB073220040F4D3 /* ViewController.swift */,
+			);
+			name = controllers;
+			sourceTree = "<group>";
+		};
+		813B715F1CB098610040F4D3 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				813B714A1CB073220040F4D3 /* Main.storyboard */,
+			);
+			name = views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,8 +197,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				813B71731CB099F70040F4D3 /* image2.jpg in Resources */,
+				813B71671CB099CD0040F4D3 /* sound2.mp3 in Resources */,
+				813B71721CB099F70040F4D3 /* image1.jpg in Resources */,
+				813B71761CB099F70040F4D3 /* image5.jpg in Resources */,
+				813B71741CB099F70040F4D3 /* image3.jpg in Resources */,
 				813B71541CB073220040F4D3 /* LaunchScreen.storyboard in Resources */,
+				813B71771CB099F70040F4D3 /* image6.jpg in Resources */,
 				813B71511CB073220040F4D3 /* Assets.xcassets in Resources */,
+				813B71661CB099CD0040F4D3 /* sound1.mp3 in Resources */,
+				813B71751CB099F70040F4D3 /* image4.jpg in Resources */,
+				813B71691CB099CD0040F4D3 /* sound4.mp3 in Resources */,
+				813B71681CB099CD0040F4D3 /* sound3.mp3 in Resources */,
+				813B716A1CB099CD0040F4D3 /* sound5.mp3 in Resources */,
+				813B716B1CB099CD0040F4D3 /* sound6.mp3 in Resources */,
 				813B714C1CB073220040F4D3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -142,6 +225,7 @@
 				813B71491CB073220040F4D3 /* ViewController.swift in Sources */,
 				813B71471CB073220040F4D3 /* AppDelegate.swift in Sources */,
 				813B714F1CB073220040F4D3 /* MyNewPlayer.xcdatamodeld in Sources */,
+				813B71791CB24E8A0040F4D3 /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +377,7 @@
 				813B715A1CB073220040F4D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
